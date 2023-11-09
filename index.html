@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/react@^16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-   <p>;lkkfgkdd</p> 
+<div class="root"></div>
+<script  type="text/babel">
+    class App extends React.Component {
+        render() {
+          return <h1>Hello world!</h1>
+        }
+      }
+
+      ReactDOM.render(<App />, document.getElementById('root'))
+</script>
 </body>
 </html>
